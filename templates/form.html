@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Welcome to {{ titlu }}</h1>
+        <form action="/alta" method="post">
+            <input type="hidden" name="titlu" value="id-{{ titlu }}" />
+
+            <p>
+                <label for="lst">Lista</label>
+                <select name="lst" id="lst">
+                    <option value="1">Optiunea 1</option>
+                    <option value="2">Optiunea 2</option>
+                    <option value="3">Optiunea 3</option>
+                    <option value="4">Optiunea 4</option>
+                    <option value="5">Optiunea 5</option>
+                    <option value="6">Optiunea 6</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="radio-1">Optiunea 1</label
+                ><input type="radio" id="radio-1" name="radio" value="1" />
+            </p>
+            <p>
+                <label for="radio-2">Optiunea 2</label
+                ><input type="radio" id="radio-2" name="radio" value="2" />
+            </p>
+            <p>
+                <label for="radio-3">Optiunea 3</label
+                ><input type="radio" id="radio-3" name="radio" value="3" />
+            </p>
+            <p>
+                <label for="radio-4">Optiunea 4</label
+                ><input type="radio" id="radio-4" name="radio" value="4" />
+            </p>
+            <p>
+                <label for="radio-5">Optiunea 5</label
+                ><input type="radio" id="radio-5" name="radio" value="5" />
+            </p>
+
+            <button type="submit">Baga mare</button>
+        </form>
+    </body>
+</html>
